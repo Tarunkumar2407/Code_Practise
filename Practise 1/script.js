@@ -381,4 +381,14 @@ const arr = [1, 2, 3, 4, 5, 6];
 // myArray.fill(2, 2, 5)
 // console.log(myArray)
 
+// const number = new Set();
 
+// number.add(1)
+// number.add(2)
+// number.add(6)
+// number.add(9)
+
+// console.log(number.size)
+// console.log(number.delete(1))
+// console.log(number.has(3))
+// console.log(number)
