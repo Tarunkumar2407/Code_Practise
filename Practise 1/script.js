@@ -338,7 +338,7 @@ function printABC(char) {
 
 // print()
 
-const arr = [1, 2, 3, 4, 5, 6];
+// const arr = [1, 2, 3, 4, 5, 6];
 // const arr2 = arr.map((value, index, array) => {
 //      console.log(value * 2, index, array);
 //      return value * 3;
@@ -392,3 +392,22 @@ const arr = [1, 2, 3, 4, 5, 6];
 // console.log(number.delete(1))
 // console.log(number.has(3))
 // console.log(number)
+
+
+// const person = new Map()
+// person.set("name", "Tarun")
+// person.set("age", 24)
+// console.log(person)
+// console.log(person.keys())
+// console.log(person.values())
+// for(let key of person.values()){
+//     console.log(key)
+// }
+
+// const person2 = new Map([["name", "Ankur"], ["age", 24]])
+
+// console.log(person2)
+
+// for(let key of person2){
+//     console.log(key)
+// }
