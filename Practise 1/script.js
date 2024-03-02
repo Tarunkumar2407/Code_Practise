@@ -151,3 +151,91 @@ console.log("hello world")
 // console.log(arr3)
 // const arr4 = [...arr1]
 // console.log(arr4)
+
+// function greet(name, callback){
+//     console.log("Hi " + name)
+//     callback("Tarun kumar")
+// }
+
+// function callMe(name2) {
+//     console.log("Hi i am callback function")
+//     console.log(`Hi my name is ${name2}`)
+// }
+
+// greet("Tarun", callMe)
+
+// function getCheese(callback){
+//     setTimeout(() => {
+//         const cheese = "🧀";
+//         callback(cheese)
+//     })
+// }
+
+// function makeDough(cheese, callback){
+//     setTimeout(() => {
+//         const dough = cheese + "🍩";
+//         callback(dough)
+//     })
+// }
+
+// function bakePizza(dough, callback){
+//     setTimeout(() => {
+//         const pizza = dough + "🍕"
+//         callback(pizza)
+//     })
+// }
+
+// getCheese((cheese) => {
+//      makeDough(cheese, (dough) => {
+//           bakePizza(dough, (pizza) => {
+//             console.log("here is the pizza", pizza)
+//             console.log("got the pizza", pizza)
+//           })
+//      })
+// })
+
+
+function getCheese(){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const cheese = "🧀";
+            resolve(cheese)
+        },1000)
+    })
+    
+}
+
+function makeDough(cheese){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const dough = cheese + "🍩";
+            resolve(dough)
+        },1000)
+    })
+}
+
+function bakePizza(dough){
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            const pizza = dough + "🍕";
+            resolve(pizza)
+        },1000)
+    })
+}
+
+getCheese()
+  .then((cheese) => {
+    console.log("here is the cheese", cheese)
+    return makeDough(cheese)
+  })
+  .then((dough)=> {
+    console.log("here is the dough", dough)
+    return bakePizza(dough)
+  })
+  .then((pizza) => {
+    console.log("here is the pizza", pizza)
+  })
+  .catch((data) => console.log("Something error occurs", error))
+  .finally(() => console.log("happy eating!!!"))
+
+
