@@ -475,3 +475,23 @@ function printABC(char) {
 // const ans = about.bind(person1, "Akshay", "Article 370")
 // ans();
 
+// console.log(this)
+// console.log(window)
+// console.log(this == window)
+// console.log(this === window)
+
+// function myFunc(){
+//     "use strict"
+//     console.log(this)
+// }
+// myFunc()
+
+// const person1 = {
+//     name: "Tarun",
+//     age: 24
+// }
+
+// const person2 = Object.create(person1)
+
+// console.log(person2.name)
+// console.log(person2)
