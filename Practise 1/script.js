@@ -411,3 +411,19 @@ function printABC(char) {
 // for(let key of person2){
 //     console.log(key)
 // }
+
+// const ticket = new Promise((resolve, reject) => {
+//     const isBorded = false;
+//     if(isBorded){
+//         resolve("congratulations!!!, You are in the flight")
+//     }
+//     else{
+//         reject("Your flight has been cancelled")
+//     }
+// })
+
+// ticket
+// .then((data) => console.log(data))
+// .catch(data => console.log(data)) 
+// .finally(() => console.log("It will always exexuted"))
+
