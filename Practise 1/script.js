@@ -427,3 +427,51 @@ function printABC(char) {
 // .catch(data => console.log(data)) 
 // .finally(() => console.log("It will always exexuted"))
 
+// const obj = {
+//     name : "Tarun",
+//     age: 24,
+//     // address: {houseNumber: 006, landmark: "Mda colony"}
+// }
+
+// // const obj2 = Object.assign({}, obj)
+// // console.log(obj2)
+
+// console.log(obj?.address?.houseNumber)
+
+// const person = {
+//     name: "Tarun",
+//     age: 18,
+//     about: function(){
+//         console.log(`Person's name is ${this.name} and age is ${this.age}`)
+//     }
+// }
+
+// const person2 = {
+//     name: "Ankur",
+//     age: 24
+// }
+
+// person.about();
+
+// person.about.call(person2)
+
+// function about(favActor, favMovie){
+//     console.log(`Person's name is ${this.name} and age is ${this.age} ${favActor} and ${favMovie}`)
+// }
+
+// const person1 = {
+//     name: "Tarun",
+//     age: 24
+// }
+
+// const person2 = {
+//     name: "Ankur",
+//     age: 18
+// }
+
+// about.call(person1, "Akshay", "Article 370")
+// about.call(person2, "Akshay", "Article 370")
+// about.apply(person2, ["Akshay", "Article 370"])
+// const ans = about.bind(person1, "Akshay", "Article 370")
+// ans();
+
