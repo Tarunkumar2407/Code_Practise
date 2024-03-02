@@ -564,19 +564,19 @@ function printABC(char) {
     // body.style.backgroundColor = randomColor
 // })
 
-const grandParent = document.querySelector(".grandParent")
-console.log(grandParent)
+// const grandParent = document.querySelector(".grandParent")
+// console.log(grandParent)
 
-const parent = document.querySelector(".parent")
-console.log(parent)
+// const parent = document.querySelector(".parent")
+// console.log(parent)
 
-const child = document.querySelector(".child")
-console.log(child)
+// const child = document.querySelector(".child")
+// console.log(child)
 
-grandParent.addEventListener("click", (e) => {
-    console.log(e.target.textContent)
-    // console.log("capture Grand Parent!!")
-})
+// grandParent.addEventListener("click", (e) => {
+//     console.log(e.target.textContent)
+//     // console.log("capture Grand Parent!!")
+// })
 
 // parent.addEventListener("click", () => {
 //     console.log("capture parent")
@@ -618,3 +618,109 @@ grandParent.addEventListener("click", (e) => {
 // .then((value) => console.log(value))
 
 
+// function hello() {
+//     console.log("hello world")
+// }
+// hello()
+
+// console.log(hello.name)
+
+// hello.myOwnProperty = "very unique value"
+// console.log(hello.myOwnProperty)
+
+// console.log(hello.prototype)
+
+// hello.prototype.abc = "abc"
+// hello.prototype.xyz = "xyz"
+
+// console.log(hello.prototype)
+
+// class Animal {
+//     constructor(name, age){
+//         this.name = name,
+//         this.age = age
+//     }
+//     eat() {
+//         return `${this.name} is eating`
+//     }
+//     get name() {
+//         return `${this.name}`
+//     }
+// }
+// class Dog extends Animal{
+//     constructor(name, age, speed){
+//         super(name, age)
+//         this.speed = speed;
+//     }
+//     isFast() {
+//         if(this.speed>20){
+//             return `${this.name} is fast`
+//         }
+//         else{
+//             return `${this.name} is slow`
+//         }
+//     }
+//     
+// }
+
+
+// const puppy = new Animal("Johney", 24)
+// console.log(puppy)
+
+// const rockey = new Dog("Rockey", 6, 40)
+// // console.log(rockey)
+// // console.log(rockey.isFast())
+// console.log(rockey.get)
+
+
+
+// class Person {
+//     constructor(fname, lname, age){
+//         this.fname = fname;
+//         this.lname = lname;
+//         this.age = age;
+//     }
+
+//     get fullName() {
+//         return `${this.fname} ${this.lname}`
+//     }
+
+//     set setFullName(fullname) {
+//         const [fname, lname] = fullname.split(" ")
+//         this.fname = fname;
+//         this.lname = lname;
+//     }
+// }
+
+// const person1 = new Person("Tarun", "Kumar", 24)
+// console.log(person1.fullName)
+// person1.setFullName = "Sumer Raj"
+// console.log(person1.fullName)
+
+
+// function multiply(x){
+//     return function(y){
+//         console.log( x * y)
+//     }
+// }
+
+// const multiplyTwo = multiply(2)
+// multiplyTwo(3)
+
+
+// const multiArgFunc = (a, b, c) => a + b + c;
+// console.log(multiArgFunc(1, 2, 3))
+
+// const curryUnaryFunc = a => b => c => a + b + c ;
+// console.log(curryUnaryFunc(1))
+// console.log(curryUnaryFunc(1)(2))
+// console.log(curryUnaryFunc(1)(2)(3))
+
+// document.cookie = "username: Tarun Kumar"
+// let x = document.cookie;
+// console.log(x);
+
+// document.cookie = "username: Tarun; expires: Sat, 02 Mar 2024, 12:00:00 UTC"
+
+// let y = document.cookie;
+// console.log(y);
