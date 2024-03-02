@@ -338,3 +338,47 @@ function printABC(char) {
 
 // print()
 
+const arr = [1, 2, 3, 4, 5, 6];
+// const arr2 = arr.map((value, index, array) => {
+//      console.log(value * 2, index, array);
+//      return value * 3;
+// })
+// console.log(arr2)
+
+// const arr3 = arr.filter((value) => {
+//     return value % 2 == 0
+// })
+
+// console.log(arr3)
+
+// const sum = arr.reduce((acc, curr)=> {
+//     return acc + curr;
+// })
+// console.log(sum)
+
+// const max = arr.reduce((acc, curr) => {
+//     if(curr > acc) {
+//         acc = curr;
+//     }
+//     return acc;
+// })
+
+// console.log(max)
+
+// const num = [23, 54, 2, 76, 24, 21, 5];
+
+// num.sort((a,b)=> b - a)
+// console.log(num)
+
+// const myArray = ["hello", "cat", "dog", "Apple"]
+// const ans = myArray.find(string => string.length === 3)
+// console.log(ans)
+
+// const myArray = new Array(10).fill(0)
+
+// console.log(myArray)
+
+// myArray.fill(2, 2, 5)
+// console.log(myArray)
+
+
