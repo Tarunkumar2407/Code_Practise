@@ -724,3 +724,34 @@ function printABC(char) {
 
 // let y = document.cookie;
 // console.log(y);
+
+// localStorage.setItem("name", "Tarun")
+// let name1 = localStorage.getItem(name)
+// console.log(name1)
+
+// localStorage.clear()
+
+// fetch("https://jsonplaceholder.typicode.com/users")
+// .then((response) => {
+//     if(response.ok == true){
+//         console.log(response)
+//         return response.json()
+//     }
+//     else{
+//         throw new Error("Something went wrong")
+//     }
+// })
+// .then((data) => console.log(data))
+// .catch((error) => console.log(error))
+
+
+// async function fetchData() {
+//     const response = await fetch("https://jsonplaceholder.typicode.com/users")
+//     const data = await response.json();
+//     return data;
+// }
+
+// fetchData()
+// .then((data) => {
+//     console.log(data)
+// })
