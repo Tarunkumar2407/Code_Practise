@@ -755,3 +755,53 @@ function printABC(char) {
 // .then((data) => {
 //     console.log(data)
 // })
+
+// const date = new Date() 
+
+// console.log(date.toLocaleDateString())
+// console.log(date.toLocaleTimeString())
+
+// const date = Date.now()
+// console.log(date)
+
+// function* simpleGenerator() {
+//     let i = 100;
+//     while(true){
+//         i++;
+//         yield i;
+//     }
+// }
+
+// let generator = simpleGenerator()
+// console.log(generator.next().value)
+// console.log(generator.next().value)
+// console.log(generator.next().value)
+// console.log(generator.next().value)
+
+// let a = 10;
+// console.log(a)
+// console.log(this.a)
+// console.log(window.a)
+// console.log(this.b)
+// console.log(window.b)
+
+// let a = Symbol("Tarun")
+// let b = Symbol("Tarun")
+
+// console.log(a == b)
+// console.log(a)
+// console.log(a.description)
+
+// let a = 9.6567
+// console.log(a.toExponential(2))
+// console.log(a.toFixed(3))
+// console.log(a.toPrecision(3))
+// console.log(Number.isInteger(a))
+// console.log(Number.parseInt(a))
+// console.log(Number.isInteger(a))
+// console.log(Number.isSafeInteger(a))
+// console.log(Number.parseFloat(a))
+// console.log(Number.MAX_VALUE)
+// console.log(Number.MIN_VALUE)
+
+// console.log(undefined + 1)
