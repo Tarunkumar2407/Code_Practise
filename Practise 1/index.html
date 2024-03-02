@@ -5,9 +5,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <script src="script.js" defer></script>
+    <style>
+        body{
+            display: flex;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+        }
+        .box{
+            min-height: 100px;
+            min-width: 100px;
+            border: 2px solid black;
+            padding: 50px;
+        }
+    </style>
 </head>
 <body>
-    <h1>JavaScript</h1>
-    
+    <!-- <div class="heading"><li>heading</li></div>
+    <div id="heading2"> Heading2</div> -->
+    <!-- <h1>JavaScript</h1> -->
+    <!-- <a href="https://www.google.co.in/" target="_blank">Google Home Page</a><br> -->
+    <!-- <button class="btn">Change Color</button> -->
+
+    <div class="grandParent box" style="background-color: grey;">
+        GrandParent
+        <div class="parent box" style="background-color: yellowgreen;">
+            Parent
+            <div class="child box" style="background-color: yellow;">child</div>
+        </div>
+    </div>
 </body>
 </html>

@@ -495,3 +495,126 @@ function printABC(char) {
 
 // console.log(person2.name)
 // console.log(person2)
+
+
+// const heading = document.getElementsByClassName("heading")
+// heading[0].style.color = "Red"
+// // heading.style.color = "blue"
+// console.log(heading)
+
+// heading[0].textContent = "Heading1"
+// heading[0].style.border = "2px solid green"
+
+
+// const link = document.getElementsByTagName("a")
+// console.log(link[0])
+// console.log(link[0].getAttribute("href"))
+// link[0].setAttribute("type", "button")
+
+// console.log(typeof link)
+// console.log(Array.isArray(link))
+
+// const heading2 = document.querySelector("#heading2")
+
+// console.log(heading2)
+// console.log(typeof heading2)
+
+// const newItem = document.createElement("li")
+// newItem.textContent = "A quick revision of javascript again"
+
+// const oldItem = document.getElementsByClassName("heading")
+// console.log(oldItem[0].textContent)
+// oldItem.append(newItem)
+
+// console.log(newItem)
+
+// const allButtons = document.querySelectorAll(".btn")
+// console.log(allButtons)
+// // console.log(button.textContent)
+// // button.addEventListener("click", function() {
+// //     console.log("You clicked me!!!")
+// //     console.log(this)
+// // })
+// allButtons.forEach((button) => {
+//     button.addEventListener("click", (e) => {
+//         console.log("You clicked me!!!")
+//         console.log(e.target.textContent)
+//         button.style.backgroundColor = "yellow"
+//     })
+// })
+
+
+// const body = document.body
+
+// function randomColorGen() { 
+//     const red = Math.floor(Math.random() * 256)
+//     const green = Math.floor(Math.random() * 256)
+//     const blue = Math.floor(Math.random() * 256)
+//     const randomColor = `rgb(${red}, ${green}, ${blue})`
+//     return randomColor
+// }
+// const button = document.querySelector(".btn")
+// button.addEventListener('click', () => {
+//      setInterval(() => {
+//         const randomColor = randomColorGen()
+//         body.style.backgroundColor = randomColor
+//         button.textContent = randomColor
+//      },1000)
+    // const randomColor = randomColorGen()
+    // body.style.backgroundColor = randomColor
+// })
+
+const grandParent = document.querySelector(".grandParent")
+console.log(grandParent)
+
+const parent = document.querySelector(".parent")
+console.log(parent)
+
+const child = document.querySelector(".child")
+console.log(child)
+
+grandParent.addEventListener("click", (e) => {
+    console.log(e.target.textContent)
+    // console.log("capture Grand Parent!!")
+})
+
+// parent.addEventListener("click", () => {
+//     console.log("capture parent")
+// },true)
+
+// child.addEventListener("click", () => {
+//     console.log("capture child")
+// },true)
+
+// grandParent.addEventListener("click", () => {
+//     console.log("bubble Grand Parent!!")
+// })
+
+// parent.addEventListener("click", () => {
+//     console.log("bubble parent")
+// })
+
+// child.addEventListener("click", () => {
+//     console.log("bubble child")
+// })
+
+
+// function myPromise() {
+//     return new Promise((resolve, reject) => {
+//         resolve("Foo")
+//     })
+// }
+// myPromise()
+// .then((value) => {
+//     console.log(value)
+//     value += "baaz"
+//     return value
+// })
+// .then((value) => {
+//     console.log(value)
+//     value += "man"
+//     return value
+// })
+// .then((value) => console.log(value))
+
+
