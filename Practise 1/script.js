@@ -195,47 +195,92 @@ console.log("hello world")
 // })
 
 
-function getCheese(){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            const cheese = "🧀";
-            resolve(cheese)
-        },1000)
-    })
+// function getCheese(){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const cheese = "🧀";
+//             resolve(cheese)
+//         },1000)
+//     })
     
-}
+// }
 
-function makeDough(cheese){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            const dough = cheese + "🍩";
-            resolve(dough)
-        },1000)
-    })
-}
+// function makeDough(cheese){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const dough = cheese + "🍩";
+//             resolve(dough)
+//         },1000)
+//     })
+// }
 
-function bakePizza(dough){
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            const pizza = dough + "🍕";
-            resolve(pizza)
-        },1000)
-    })
-}
+// function bakePizza(dough){
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             const pizza = dough + "🍕";
+//             resolve(pizza)
+//         },1000)
+//     })
+// }
 
-getCheese()
-  .then((cheese) => {
-    console.log("here is the cheese", cheese)
-    return makeDough(cheese)
-  })
-  .then((dough)=> {
-    console.log("here is the dough", dough)
-    return bakePizza(dough)
-  })
-  .then((pizza) => {
-    console.log("here is the pizza", pizza)
-  })
-  .catch((data) => console.log("Something error occurs", error))
-  .finally(() => console.log("happy eating!!!"))
+// getCheese()
+//   .then((cheese) => {
+//     console.log("here is the cheese", cheese)
+//     return makeDough(cheese)
+//   })
+//   .then((dough)=> {
+//     console.log("here is the dough", dough)
+//     return bakePizza(dough)
+//   })
+//   .then((pizza) => {
+//     console.log("here is the pizza", pizza)
+//   })
+//   .catch((data) => console.log("Something error occurs", error))
+//   .finally(() => console.log("happy eating!!!"))
 
+
+// async function orderPizza() {
+//     try {
+//         const cheese = await getCheese();
+//         console.log("here is the cheese", cheese)
+
+//         const dough = await makeDough(cheese)
+//         console.log("here is the dough", dough)
+
+//         const pizza = await bakePizza(dough)
+//         console.log("here is the pizza", pizza)
+
+//     } catch (error) {
+//         console.log(error)
+//     }
+// }
+
+// orderPizza();
+
+// function myFunc(callback){
+//     console.log("function is doing task 1")
+//     return callback
+// }
+
+// function myFunc2(){
+//     console.log("Function is doing task 2")
+// }
+
+// var ans = myFunc(myFunc2)
+// ans()
+
+// function calculate(a, b, operation){
+//     return operation(a, b)
+// }
+
+// calculate(4, 5, (num1, num2) => {
+//      console.log(num1 + num2);
+// })
+
+// // console.log(addition)
+
+// const subtraction = (a, b) => a - b;
+
+// const subResult = calculate(6, 2, subtraction)
+// console.log(subResult)
 
