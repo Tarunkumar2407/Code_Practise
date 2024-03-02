@@ -284,3 +284,57 @@ console.log("hello world")
 // const subResult = calculate(6, 2, subtraction)
 // console.log(subResult)
 
+// function printABC(char, callback){
+//       setTimeout(() => {
+//         console.log(char)
+//         callback()
+//       },1000)
+// }
+// printABC("A", () => {
+//     printABC("B", () => {
+//         printABC("C", () => {
+//             printABC("D", () => {
+//                 console.log("Abcd is printed")
+//             })
+//         })
+//     })
+// })
+
+function printABC(char) {
+    return new Promise((resolve, reject) => {
+        setTimeout(() => {
+            resolve(char)
+        },1000)
+    })
+}
+// printABC("A")
+// .then((char) => {
+//     console.log(char)
+//     return printABC("B")
+// })
+// .then((char) => {
+//     console.log(char)
+//     return printABC("C")
+// })
+// .then((char) => {
+//     console.log(char)
+// })
+
+// async function print(){
+//     try{
+//         const printA = await printABC("A")
+//     console.log(printA)
+
+//     const printB = await printABC("B")
+//     console.log(printB)
+
+//     const printC = await printABC("C")
+//     console.log(printC)
+// }
+// catch(error){
+//     console.log(error)
+// }
+// }
+
+// print()
+
