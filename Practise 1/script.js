@@ -300,13 +300,13 @@ console.log("hello world")
 //     })
 // })
 
-function printABC(char) {
-    return new Promise((resolve, reject) => {
-        setTimeout(() => {
-            resolve(char)
-        },1000)
-    })
-}
+// function printABC(char) {
+//     return new Promise((resolve, reject) => {
+//         setTimeout(() => {
+//             resolve(char)
+//         },1000)
+//     })
+// }
 // printABC("A")
 // .then((char) => {
 //     console.log(char)
@@ -805,3 +805,47 @@ function printABC(char) {
 // console.log(Number.MIN_VALUE)
 
 // console.log(undefined + 1)
+
+
+//Deep copy shallow copy
+
+// const person1 = {
+//     name: "Tarun",
+//     age: 24,
+//     address: {city: "Moradabad"}
+// }
+
+// // const person2 = {...person1}
+// // const person2 = structuredClone(person1)
+// const person2 = JSON.parse(JSON.stringify(person1))
+// console.log(person1)
+// console.log(person2)
+// person2.address.city = "Noida"
+// console.log(person1)
+// console.log(person2)
+// console.log(5 + "5")
+// console.log('5' - - '5')
+
+// const memoize = () => {
+//     let cache = {}
+//     return (value) => {
+//         if(value in cache){
+//             console.log("Fetching from cache")
+//              return cache[value]
+//         }
+//         else{
+//             console.log("Calculating the result")
+//             let result = value + 20;
+//             cache[value] = result;
+//             return result;
+//         }
+//     }
+// }
+// const addition = memoize()
+// console.log(addition(20))
+// console.log(addition(10))
+// console.log(addition(10))
+
+
+// (function() {
+//     console.log("i am invoked")
