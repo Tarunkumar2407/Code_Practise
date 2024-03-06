@@ -16,6 +16,12 @@ import BasicFormValidation from './Components/BasicFormValidation';
 import LifeCycleParent from './Components/LifeCycleMethod.js/LifeCycleParent';
 import UseStateWithVariable from './Components/Hooks/UseStateHook/UseStateWithVariable';
 import UseStateWithObjects from './Components/Hooks/UseStateHook/UseStateWithObjects';
+import UseStateWithArray from './Components/Hooks/UseStateHook/UseStateWithArray';
+import TodoListApp from './Components/Hooks/UseStateHook/TodoListApp';
+import UseEffect from './Components/Hooks/UseEffectBasics/UseEffect';
+import MakingTable from './Components/MakingTable';
+import LiftingStateParent from './Components/LiftingStateUp/LiftingStateParent';
+import UseMemo from './Components/Hooks/UseMemo';
 
 function App() {
   return (
@@ -37,8 +43,13 @@ function App() {
       {/* <BasicFormValidation /> */}
       {/* <LifeCycleParent /> */}
       {/* <UseStateWithVariable /> */}
-
-      <UseStateWithObjects />
+      {/* <UseStateWithObjects /> */}
+      {/* <UseStateWithArray /> */}
+      {/* <TodoListApp /> */}
+      {/* <UseEffect />  */}
+      {/* <MakingTable /> */}
+      {/* <LiftingStateParent /> */}
+      <UseMemo />
       </div>
   );
 }
