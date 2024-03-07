@@ -22,6 +22,10 @@ import UseEffect from './Components/Hooks/UseEffectBasics/UseEffect';
 import MakingTable from './Components/MakingTable';
 import LiftingStateParent from './Components/LiftingStateUp/LiftingStateParent';
 import UseMemo from './Components/Hooks/UseMemo';
+import UseRef from './Components/Hooks/UseRef';
+import ForwardRefParentt from './Components/Hooks/UseStateHook/ForwardRef/ForwardRefParentt';
+import UseEffectWithMultipleDependency from './Components/Hooks/UseEffectBasics/UseEffectWithMultipleDependency';
+import UseCallbackParent from './Components/Hooks/UseCallback/UseCallbackParent';
 
 function App() {
   return (
@@ -49,7 +53,11 @@ function App() {
       {/* <UseEffect />  */}
       {/* <MakingTable /> */}
       {/* <LiftingStateParent /> */}
-      <UseMemo />
+      {/* <UseMemo /> */}
+      {/* <UseRef /> */}
+      {/* <ForwardRefParentt /> */}
+      {/* <UseEffectWithMultipleDependency /> */}
+      <UseCallbackParent />
       </div>
   );
 }
