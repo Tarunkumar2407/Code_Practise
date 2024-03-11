@@ -1,7 +1,11 @@
 import './App.css';
 // import ContextParent from './Components/ContextAPI/ContextParent';
 // import UseContextParent from './Components/UseContext/UseContextParent';
-import UseContext2Parent from './Components/UseContext2/UseContext2Parent';
+// import UseContext2Parent from './Components/UseContext2/UseContext2Parent';
+import CounterMain from './Components/UseCustomHook/CounterMain';
+// import UseCustomMain from './Components/UseCustomHook/UseCustomMain';
+// import UseReducerForTwoCounter from './Components/UseReducer/UseReducerForTwoCounter';
+// import UseReducerHook from './Components/UseReducer/UseReducerHook';
 // import User from './Components/ClassComponent';
 // import ClickEvent from './Components/ClickEvent';
 // import ConditionalRendering from './Components/ConditionalRendering';
@@ -64,7 +68,11 @@ function App() {
       {/* <Parent /> */}
       {/* <ContextParent /> */}
       {/* <UseContextParent /> */}
-      <UseContext2Parent />
+      {/* <UseContext2Parent /> */}
+      {/* <UseReducerHook /> */}
+      {/* <UseReducerForTwoCounter /> */}
+      {/* <UseCustomMain /> */}
+      <CounterMain />
       </div>
   );
 }
